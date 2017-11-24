@@ -1,1 +1,1 @@
-# Simon-Game
+# FreeCodeCamp's project Simon-Game
