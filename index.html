@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="application-name" content="Simon Game" />
+    <meta name="author" content="Denis Kalinin" />
+
+    <title>Simon Game</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    
+</head>
+
+<body>
+<div class="wrapper">
+		<p class="title">Simon Game</p>
+		<div class="gameField">
+			<div class="left-top sector" data-id="1"></div>
+			<div class="right-top sector" data-id="2"></div>
+			<div class="center">
+				<div class="board">
+					<div class="countGroup">
+						<div class="count"></div>
+						<p class="countLabel">count</p>
+					</div>
+					<div class="startGroup">
+						<div class="start shadowButton"></div>
+						<p class="startLabel">start</p>
+					</div>
+					<div class="modeGroup">
+						<div class="rdButton">
+							<div class="light"></div>
+						</div>
+						<div class="mode shadowButton"></div>
+						<div class="modeLabel">strict</div>
+					</div>
+				</div>
+			</div>
+			<div class="left-bottom sector" data-id="3"></div>
+			<div class="right-bottom sector" data-id="4"></div>
+			<div class="win">
+				<p>You won!</p>
+				<p class="timer"></p>			
+			</div>			
+		</div>		
+		<audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" id="audioEl1"></audio>
+		<audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" id="audioEl2" ></audio>
+		<audio src="http://www.freetone.org/ring/eff/gudok_freetone.mp3"  id="error"></audio>
+	</div>
+  <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/index.js" charset="utf-8"></script>
+  </body>
